@@ -7,7 +7,7 @@ import { styled } from 'nativewind';
 
 
 
-const Home = () => {
+const Houses = () => {
 
   const tailwind = useTailwind();
     return (
@@ -15,4 +15,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Houses;
