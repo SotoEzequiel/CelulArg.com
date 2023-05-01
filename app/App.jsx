@@ -1,6 +1,6 @@
 import React from "react";
 import {StyleSheet, Text, View} from "react-native";
-import Houses from "./src/components/Houses";
+import Houses from "./src/components/Houses/Houses";
 
 
 const App = () => {
