@@ -3,8 +3,7 @@ import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons';
+
 
 const Footer = () => {
   return (
@@ -17,12 +16,6 @@ const Footer = () => {
       </TouchableOpacity>
       <TouchableOpacity style={styles.icon}>
         <Entypo name="instagram" size={24} color="#fff" />
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.icon}>
-        <MaterialCommunityIcons name="google-plus" size={24} color="#fff" />
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.icon}>
-        <FontAwesome name="pinterest" size={24} color="#fff" />
       </TouchableOpacity>
     </View>
   );

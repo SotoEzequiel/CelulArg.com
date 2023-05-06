@@ -1,8 +1,6 @@
 import React from "react";
 import {StyleSheet, Text, View} from "react-native";
-import Houses from "./src/components/Houses/Houses";
-import Navbar from "./src/components/Navbar/Navbar";
-import Footer from "./src/components/Footer/Footer"
+import Home from "./src/pages/Home/Home";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -13,9 +11,7 @@ const styles = StyleSheet.create({
 const App = () => {
   return(
     <View style={styles.container}>
-    <Navbar/>
-      <Houses/>
-      <Footer/>
+    <Home/>
     </View>
   ) 
 }
