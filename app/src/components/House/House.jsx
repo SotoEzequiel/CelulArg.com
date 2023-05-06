@@ -3,11 +3,11 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   cardContainer: {
-    backgroundColor: 'none',
-    borderRadius: 5,
+    backgroundColor: '#040614',
+    borderRadius: 1,
     borderWidth: 1,
     borderColor: 'orange',
-    margin: 10,
+    margin: 30,
     padding: 10,
     flexDirection: 'column',
     alignItems: 'center',
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   houseImage: {
     width: 300,
     height: 150,
-    borderRadius: 5,
+    borderRadius: 4,
   },
   houseName: {
     fontWeight: 'bold',
@@ -31,6 +31,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+  houseDescription: {
+    color: '#888',
+
+  },
+  houseAndress:{
+    color: '#fff'
+  }
 });
 
 const HouseList = (props) => {
@@ -45,6 +52,8 @@ const HouseList = (props) => {
             <View>
               <Text style={styles.houseName}>{i.name}</Text>
               <Text style={styles.housePrice}>${i.price}</Text>
+              <Text style={styles.houseDescription}>{i.description}</Text>
+              <Text style={styles.houseAndress}>Andress: {i.andress}</Text>
             </View>
           </View>
         );
