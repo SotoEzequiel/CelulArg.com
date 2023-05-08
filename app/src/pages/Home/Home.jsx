@@ -1,5 +1,5 @@
 import React from "react";
-import Filter from "../../components/filter/filter";
+import Filter from "../../components/Filter/Filter";
 import Houses from "../../components/Houses/Houses";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer"

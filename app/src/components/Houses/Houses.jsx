@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { styled } from 'nativewind';
+
 import House from '../House/House';
 const houses = [{
   name: "casa gris de 4 piezas",
