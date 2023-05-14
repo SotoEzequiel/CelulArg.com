@@ -40,26 +40,12 @@ const styles = StyleSheet.create({
   }
 });
 
-const HouseList = (props) => {
+const Phone = (props) => {
   return (
     <View>
-      {props.houses.map((i) => {
-        return (
-          <View style={styles.cardContainer} key={i.id}>
-            <View style={styles.imageContainer}>
-              <Image style={styles.houseImage} source={{ uri: i.image }} />
-            </View>
-            <View>
-              <Text style={styles.houseName}>{i.name}</Text>
-              <Text style={styles.housePrice}>${i.price}</Text>
-              <Text style={styles.houseDescription}>{i.description}</Text>
-              <Text style={styles.houseAndress}>Andress: {i.andress}</Text>
-            </View>
-          </View>
-        );
-      })}
+      
     </View>
   );
 };
 
-export default HouseList;
+export default Phone;
