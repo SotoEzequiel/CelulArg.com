@@ -1,51 +1,50 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
-  cardContainer: {
-    backgroundColor: '#040614',
-    borderRadius: 1,
-    borderWidth: 1,
-    borderColor: 'orange',
-    margin: 30,
-    padding: 10,
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  imageContainer: {
-    margin: 21,
-  },
-  houseImage: {
-    width: 300,
-    height: 150,
-    borderRadius: 4,
-  },
-  houseName: {
-    fontWeight: 'bold',
-    fontSize: 16,
-    color: "white",
-    textTransform: 'uppercase'
-  },
-  housePrice: {
-    color: 'green',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  houseDescription: {
-    color: '#888',
 
-  },
-  houseAndress:{
-    color: '#fff'
-  }
-});
 
 const Phone = (props) => {
   return (
     <View>
-      
+      {props.data.map((item, index) => (
+        <View key={index} style={styles.container}>
+          <Image source={{ uri: item.imagen }} style={styles.image} />
+          <Text style={styles.model}>{item.modelo}</Text>
+          <Text style={styles.brand}>{item.marca}</Text>
+          <Text style={styles.price}>{item.precio}</Text>
+        </View>
+      ))}
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 8,
+    padding: 16,
+    marginBottom: 16,
+  },
+  image: {
+    width: '100%',
+    height: 200,
+    resizeMode: 'cover',
+    borderRadius: 8,
+    marginBottom: 8,
+  },
+  model: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 4,
+  },
+  brand: {
+    fontSize: 16,
+    marginBottom: 4,
+  },
+  price: {
+    fontSize: 14,
+  },
+});
 
 export default Phone;

@@ -4,7 +4,7 @@ import Phones from "../../components/Phones/Phones";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer"
 
-const Home = () => {
+const HomePage = () => {
     return (<>
       <Navbar/>
       <Filter/>
@@ -14,4 +14,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomePage;

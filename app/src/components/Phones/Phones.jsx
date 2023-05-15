@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View , StyleSheet} from 'react-native';
 
 import Phone from '../Phone/Phone';
-const phone = [
+const data = [
   {
     marca: "Apple",
     modelo: "iPhone 13 Pro Max",
@@ -11,7 +11,7 @@ const phone = [
     camara: "Triple cámara trasera de 12 MP (gran angular, ultra gran angular y teleobjetivo) y cámara frontal de 12 MP",
     bateria: "hasta 28 horas de duración de la batería",
     precio: 1899.99,
-    imagen: "https://cdn.pixabay.com/photo/2021/09/23/09/23/iphone-13-pro-6658854_960_720.jpg"
+    imagen: "https://thumbs.dreamstime.com/b/nuevo-iphone-pro-y-apple-po-color-de-espacio-gris-m%C3%A1ximo-en-un-fondo-negro-tres-c%C3%A1maras-tel%C3%A9fono-closet-cierre-logotipo-manzana-233711451.jpg"
   },
   {
     marca: "Samsung",
@@ -21,7 +21,7 @@ const phone = [
     camara: "Cuádruple cámara trasera de 108 MP (gran angular), 12 MP (ultra gran angular), 10 MP (teleobjetivo 1) y 10 MP (teleobjetivo 2) y cámara frontal de 40 MP",
     bateria: "hasta 25 horas de duración de la batería",
     precio: 1399.99,
-    imagen: "https://cdn.pixabay.com/photo/2021/05/20/12/37/samsung-galaxy-s21-6274347_960_720.jpg"
+    imagen: "https://www.techies.es/wp-content/uploads/2021/01/samsung-galaxy-s21-ultra-1.jpg"
   },
   {
     marca: "OnePlus",
@@ -31,7 +31,7 @@ const phone = [
     camara: "Cuádruple cámara trasera de 48 MP (gran angular), 50 MP (ultra gran angular), 8 MP (teleobjetivo) y 2 MP (monocromo) y cámara frontal de 16 MP",
     bateria: "hasta 34 horas de duración de la batería",
     precio: 969.99,
-    imagen: "https://cdn.pixabay.com/photo/2021/03/26/08/29/oneplus-9-pro-6126974_960_720.jpg"
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJ1d78Uvz1xMp25bEj1kIUCSixz82r41wQQ&usqp=CAU"
   },
   {
     marca: "Google",
@@ -41,15 +41,24 @@ const phone = [
     camara: "Triple cámara trasera de 50 MP (gran angular), 12 MP (ultra gran angular) y 48 MP (teleobjetivo) y cámara frontal de 11 MP",
     bateria: "hasta 36 horas de duración de la batería",
     precio: 1099.99,
-    imagen: "https://cdn.pixabay.com/photo/2021/11/03/12/00/google-pixel-6-pro-6773379_960_720.jpg"
+    imagen: "https://undertec.store/wp-content/uploads/2021/10/Google-Pixel-6-undertaker-tec-store.jpg"
   },
 ]
 
 
 const Phones = () => {
     return (
-        <Phones phone={phone}/>
+      <View style={styles.container}> 
+        <Phone data={data}/>
+
+      </View>
     )
 }
+
+const styles = StyleSheet.create({
+  container : {
+    marginVertical: 70,
+  }
+})
 
 export default Phones;
